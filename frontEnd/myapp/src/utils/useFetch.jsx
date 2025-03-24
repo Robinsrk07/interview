@@ -8,7 +8,7 @@ const useFetch = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://35.154.207.247:8080/getItems");
+      const response = await axios.get("https://35.154.207.247:8080/getItems");
       setData(response.data)
     } catch (err) {
       setError(err);

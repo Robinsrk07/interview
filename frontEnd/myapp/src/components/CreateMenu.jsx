@@ -35,7 +35,7 @@ const CreateMenu = () => {
 
   const handleSaveMenu = async () => {
     try {
-      const response = await axios.post("http://35.154.207.247:8080/addMenu", {
+      const response = await axios.post("https://35.154.207.247:8080/addMenu", {
         menuName,
         items,
       });
