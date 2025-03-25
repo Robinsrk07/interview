@@ -17,7 +17,7 @@ app.use(express.json());
 app.use("/",menuRoutes)
 
 
-mongoose.connect(process.env.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://ROBINSRK:ROBINSRK123@letsconnect.z1hp8.mongodb.net/interview?retryWrites=true&w=majority&appName=LetsConnect", { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("MongoDB Connected Successfully");
         app.listen(port, () => {

@@ -35,7 +35,8 @@ const CreateMenu = () => {
 
   const handleSaveMenu = async () => {
     try {
-      const response = await axios.post("https://api.techiconnect.shop/addMenu", {
+     const response = await axios.post("https://api.techiconnect.shop/addMenu", {
+    //    const response = await axios.post("http://localhost:8080/addMenu", {
 
         
         menuName,
